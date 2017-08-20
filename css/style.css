@@ -1160,11 +1160,6 @@ body > input[type="radio"] {
   top: 10px;
 }
 
-.paginator .prev:hover::before,
-.paginator .next:hover::before {
-  border-color:
-}
-
 .paginator .prev:active::before,
 .paginator .next:active::before {
   border-color: #353535;
