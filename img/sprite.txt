@@ -1,0 +1,102 @@
+
+x
+.bg-cart {
+    width: 21px; height: 20px;
+    background: url('css_sprites.png') -10px -195px;
+}
+
+x
+.bg-cart_black {
+    width: 21px; height: 20px;
+    background: url('css_sprites.png') -10px -235px;
+}
+
+x
+.bg-enter {
+    width: 21px; height: 19px;
+    background: url('css_sprites.png') -10px -117px;
+}
+
+x
+.bg-enter_black {
+    width: 21px; height: 19px;
+    background: url('css_sprites.png') -10px -156px;
+}
+
+x
+.bg-features_1 {
+    width: 49px; height: 49px;
+    background: url('css_sprites.png') -10px -730px;
+}
+
+x
+.bg-features_2 {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -661px;
+}
+
+x
+.bg-features_3 {
+    width: 49px; height: 49px;
+    background: url('css_sprites.png') -10px -592px;
+}
+
+x
+.bg-features_4 {
+    width: 48px; height: 49px;
+    background: url('css_sprites.png') -10px -523px;
+}
+
+x
+.bg-heart {
+    width: 15px; height: 13px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-search {
+    width: 17px; height: 17px;
+    background: url('css_sprites.png') -10px -80px;
+}
+
+x
+.bg-search_black {
+    width: 17px; height: 17px;
+    background: url('css_sprites.png') -10px -43px;
+}
+
+x
+.bg-s_fb {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -10px -315px;
+}
+
+x
+.bg-s_inst {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -10px -367px;
+}
+
+x
+.bg-s_tw {
+    width: 33px; height: 32px;
+    background: url('css_sprites.png') -10px -419px;
+}
+
+x
+.bg-s_vk {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -10px -471px;
+}
+
+x
+.bg-y {
+    width: 61px; height: 61px;
+    background: url('css_sprites.png') -10px -799px;
+}
+
+x
+.bg-zcart {
+    width: 21px; height: 20px;
+    background: url('css_sprites.png') -10px -275px;
+}
