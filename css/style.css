@@ -215,6 +215,7 @@ body > input[type="radio"] {
   color: #ffffff;
   background-color: #d07058;
   text-decoration: none;
+  padding-bottom: 6px;
 }
 
 .main-menu .active:hover {
@@ -889,6 +890,169 @@ body > input[type="radio"] {
   text-align: center;
 }
 
+/*catalog-creamy*/
+
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ffffff;
+
+}
+
+.breadcrumbs a:hover {
+  color: #ffbc9e;
+}
+
+.breadcrumbs a:active{
+  color: #ffbc9e;
+}
+
+.breadcrumbs span {
+  padding-right: 5px;
+  padding-left: 7px;
+}
+
+.page-title {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 700px;
+}
+
+.filters-form {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 865px;
+  margin-bottom: 40px;
+}
+
+.filters-form fieldset {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: lowercase;
+  border: none;
+}
+
+.filters-form select {
+  background-color: #aabab0;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: lowercase;
+  padding: 7px 10px;
+  border: none;
+}
+
+.filters-form .price-controls {
+  background-color: #aabab0;
+}
+
+.filters-form label {
+  position: relative;
+  background-color: #aabab0;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 0px;
+  margin-right: 11px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.filters-form label:first-of-type {
+  padding-left: 40px;
+}
+
+.filters-form label:last-of-type {
+  padding-right: 20px;
+  margin-right: 0px;
+}
+
+.filters-form label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.filters-form label:first-of-type::before {
+  left: 15px;
+}
+
+.filters-form .radio::before {
+  border-radius: 50%;
+}
+
+.filters-form input[type="radio"]:checked + .radio::before {
+  background-color: white;
+}
+
+.filters-form input[type="checkbox"]:checked + .checkbox::before {
+  background-color: white;
+}
+
+
+.filters-form input[type="checkbox"],
+.filters-form input[type="radio"] {
+  display: none;
+}
+
+.filters-form .filters-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: #aabab0;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.bg-container {
+  background-color: #aabab0;
+  border-radius: 20px;
+}
+
 /*footer*/
 
 .main-footer {
@@ -920,9 +1084,7 @@ body > input[type="radio"] {
   border-radius: 20px;
   margin-right: 13px;
   background: url("../img/css-sprites.png") no-repeat;
-  transition:
-    border-color 0.5s,
-    box-shadow 0.5s;
+  transition: all 0.5s;
 }
 
 .social-btn-tw {
@@ -942,7 +1104,8 @@ body > input[type="radio"] {
 }
 
 .social-btn:hover {
-  border-color: #dbe3de;
+
+  background-color: #c2cec7;
 }
 
 .social-btn:active {

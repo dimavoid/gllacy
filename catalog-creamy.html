@@ -29,9 +29,32 @@
         </nav>
         <div class="user-block">
           <ul>
-            <li><a class="btn-search" href="#">Поиск</a></li>
-            <li><a class="btn-user-block btn-login" href="#">Вход</a></li>
-            <li><a class="btn-user-block btn-cart" href="#">Пусто</a></li>
+            <li>
+              <a class="btn-search" href="#">Поиск</a>
+              <div class="search">
+                <form class="search-form" action="index.html" method="post">
+                  <input type="text" name="serach" placeholder="Что ищем?">
+                </form>
+              </div>
+            </li>
+            <li>
+              <a class="btn-user-block btn-login" href="#">Вход</a>
+              <div class="login">
+                <form class="login-form" action="index.html" method="post">
+                  <input type="email" name="email" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <button class="btn" type="submit" name="enter"><span>Войти</span></button>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </form>
+              </div>
+            </li>
+            <li>
+              <a class="btn-user-block btn-cart" href="#">Пусто</a>
+              <div class="cart">
+
+              </div>
+            </li>
           </ul>
         </div>
         <div class="header-contacts">
@@ -39,8 +62,8 @@
           <b>8 812 999-99-99</b></p>
         </div>
         <ul class="breadcrumbs">
-          <li><a href="./index.html">Главная</a></li>
-          <li><a href="./catalog.html">Каталог</a></li>
+          <li><a href="./index.html">Главная</a><span>»</span></li>
+          <li><a href="./catalog.html">Каталог</a><span>»</span></li>
           <li>Сливочное</li>
         </ul>
     </header>
@@ -63,19 +86,33 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>Жирность</legend>
-            <label><input type="radio" name="" value="">0%</label>
-            <label><input type="radio" name="" value="" checked>до 10%</label>
-            <label><input type="radio" name="" value="">до 30%</label>
-            <label><input type="radio" name="" value="">выше 30%</label>
+          <legend>Жирность:</legend>
+            <div class="bg-container">
+              <input type="radio"
+              id="fat-0" name="fat" value="">
+                <label class="radio" for="fat-0">0%</label>
+              <input type="radio" id="fat-10" name="fat" value="" checked>
+                <label class="radio" for="fat-10">до 10%</label>
+              <input type="radio" id="fat-30" name="fat" value="">
+                <label class="radio" for="fat-30">до 30%</label>
+              <input type="radio" id="fat-100" name="fat" value="">
+                <label class="radio" for="fat-100">выше 30%</label>
+            </div>
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-            <label><input type="checkbox" name="" value="" checked>шоколадные</label>
-            <label><input type="checkbox" name="" value="" checked>сахарные присыпки</label>
-            <label><input type="checkbox" name="" value="">фрукты</label>
-            <label><input type="checkbox" name="" value="">сиропы</label>
-            <label><input type="checkbox" name="" value="">джемы</label>
+            <div class="bg-container">
+              <input type="checkbox" id="filling-1" name="" value="" checked>
+              <label class="checkbox" for="filling-1">шоколадные</label>
+              <input type="checkbox" id="filling-2" name="" value="" checked>
+                <label class="checkbox" for="filling-2">сахарные присыпки</label>
+              <input type="checkbox" id="filling-3" name="" value="">
+                <label class="checkbox" for="filling-3">фрукты</label>
+              <input type="checkbox" id="filling-4" name="" value="">
+                <label class="checkbox" for="filling-4">сиропы</label>
+              <input type="checkbox" id="filling-5" name="" value="">
+                <label class="checkbox" for="filling-5">джемы</label>
+            </div>
         </fieldset>
         <button class="filters-btn" type="submit" name="apply-filters">Применить</button>
       </form>
