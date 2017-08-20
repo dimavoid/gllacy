@@ -1028,6 +1028,115 @@ body > input[type="radio"] {
   color: #ffbc9e;
 }
 
+/*модальное окно*/
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  width: 430px;
+  margin-left: -240px;
+  z-index: 10;
+  padding: 20px 25px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  font-size: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  color: #343434;
+}
+
+.feedback-form input {
+  background-color: #ffffff;
+  border: 2px solid #d3d3d2;
+  border-radius: 5px;
+  width: 346px;
+  padding: 12px 10px;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.feedback-form .btn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  border: none;
+  padding: 10px 26px;
+  font-size: 17px;
+  outline: none;
+}
+
+.feedback-form textarea {
+  margin-bottom: 70px;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 12px 10px;
+  border: 2px solid #d3d3d2;
+  max-width: 405px;
+  min-width: 405px;
+  min-height: 125px;
+}
+
+.feedback-form textarea,
+.feedback-form input:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.feedback-form textarea,
+.feedback-form input:focus {
+  border: 2px solid #8fbdec;
+}
+
 /*Вспомогательные стили*/
 
 .container {
