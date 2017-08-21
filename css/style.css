@@ -218,6 +218,10 @@ body > input[type="radio"] {
   padding-bottom: 6px;
 }
 
+.sub-menu .active {
+  padding-bottom: 14px;
+}
+
 .main-menu .active:hover {
   color: #ffffff;
   background-color: #d07058;
@@ -493,6 +497,7 @@ body > input[type="radio"] {
 .btn span {
   position: relative;
   z-index: 10;
+  color: white;
 }
 
 /*index*/
@@ -641,6 +646,38 @@ body > input[type="radio"] {
   flex-basis: 267px;
   margin-bottom: 40px;
   text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.5s;
+}
+
+.catalog-item-active {
+  position: absolute;
+  bottom: -79px;
+  left: 0;
+  width: 267px;
+  padding: 5px;
+  background-color: rgba(248, 247, 244, 0.4);
+  border-radius: 0 0 5px 5px;
+  visibility: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 5;
+}
+
+.catalog-item .btn {
+  margin: 5px 30px;
+  margin-bottom: 20px;
+}
+
+.catalog-item:hover .catalog-item-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.catalog-item:hover {
+    background-color: rgba(248, 247, 244, 0.4);
+    border-radius: 5px 5px 0 0;
 }
 
 .catalog-item-hit::before {
@@ -649,14 +686,21 @@ body > input[type="radio"] {
   background: url("../img/css-sprites.png") no-repeat -10px -799px;
   height: 61px;
   width: 61px;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
+  transition: all 0.5s;
+}
+
+.catalog-item-hit:hover::before {
+  top: 10px;
+  left: 10px;
 }
 
 .catalog-item img {
   width: 267px;
   height: 267px;
   margin-bottom: 10px;
+  border-radius: 50%;
 }
 
 .catalog-item p {
@@ -664,10 +708,15 @@ body > input[type="radio"] {
   padding: 0;
   position: absolute;
   top: 210px;
-  left: 0;
+  left: 5px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+  transition: all 0.5s;
+}
+
+.catalog-item:hover p {
+  left: 15px;
 }
 
 .catalog-item a {
@@ -946,7 +995,7 @@ body > input[type="radio"] {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 880px;
+  max-width: 860px;
   margin-bottom: 40px;
 }
 
@@ -962,6 +1011,11 @@ body > input[type="radio"] {
   color: #ffffff;
   text-transform: lowercase;
   border: none;
+}
+
+.filters-form .filters-fat,
+.filters-form .filters-filling {
+  margin-right: 0;
 }
 
 .filters-form legend {
@@ -990,7 +1044,57 @@ body > input[type="radio"] {
 }
 
 .filters-form .price-controls {
+  position: relative;
   background-color: #aabab0;
+  border-radius: 20px;
+  width: 220px;
+  height: 35px;
+}
+
+.price-controls .scale {
+  width: 188px;
+  height: 4px;
+  background-color: #d1d9d2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -94px;
+}
+
+.price-controls .scale .bar {
+  background-color: white;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.price-controls .selector {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  margin-top: -9px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 3px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.price-controls .min-selector {
+  left: 47px;
+}
+
+.price-controls .max-selector {
+  left: 127px;
+}
+
+.price-controls .selector:hover {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
 }
 
 .filters-form label {
@@ -1005,6 +1109,14 @@ body > input[type="radio"] {
   text-align: center;
   vertical-align: top;
   cursor: pointer;
+}
+
+.filters-form .filters-fat label {
+  margin-right: 6px;
+}
+
+.filters-form .filters-filling label {
+  padding-right: 5px;
 }
 
 .filters-form label:first-of-type {
@@ -1059,13 +1171,15 @@ body > input[type="radio"] {
   font-weight: 600;
   line-height: 16px;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: 1px solid white;
   background-color: #aabab0;
   border-radius: 20px;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: 22px;
+  margin-right: auto;
+  margin-left: 15px;
+  /*margin-left: auto;
+  margin-right: 22px;*/
   transition: all 0.5s;
 }
 
