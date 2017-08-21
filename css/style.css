@@ -902,7 +902,7 @@ body > input[type="radio"] {
   margin: auto;
   height: 365px;
 
-  
+
   position: relative;
 }
 
@@ -1168,6 +1168,7 @@ body > input[type="radio"] {
 
 .filters-form label:hover::before {
   border: 3px solid white;
+  transform: translate(-1px, -1px);
 }
 
 
