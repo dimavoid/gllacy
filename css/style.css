@@ -1216,7 +1216,7 @@ body > input[type="radio"] {
   height: 36px;
   text-align: center;
   vertical-align: top;
-  padding-top: 9px;
+  padding-top: 10px;
   box-sizing: border-box;
   transition: all 0.5s;
 }
