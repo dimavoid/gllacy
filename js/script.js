@@ -1,11 +1,9 @@
 var link = document.querySelector(".contacts-map .btn");
 var popup = document.querySelector(".modal-content");
-
 var feedbackEmail = popup.querySelector("[name=feedback-email]");
 var feedbackText = popup.querySelector("textarea");
 var feedbackName = popup.querySelector("[name=feedback-name]");
 var feedbackForm = popup.querySelector("form");
-
 var overlay = document.querySelector(".modal-overlay");
 var close = document.querySelector(".modal-content-close");
 
@@ -33,7 +31,7 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
-feedbackForm.addEventListener("submit", function() {
+feedbackForm.addEventListener("submit", function(event) {
   if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
     event.preventDefault();
     popup.classList.add("modal-error");
