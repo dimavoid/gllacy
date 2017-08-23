@@ -37,3 +37,15 @@ feedbackForm.addEventListener("submit", function(event) {
     popup.classList.add("modal-error");
   }
 });
+
+// Для повторения анимации, если не запонены поля
+//
+// form.addEventListener('submit', function(event) {
+//   if (fields are empty && form doesnt has animation class) {
+//     add animation class
+//   }
+// });
+//
+// form.addEventListener('animationend', function() {
+//   remove animation class
+// });
